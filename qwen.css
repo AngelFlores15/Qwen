@@ -1,0 +1,179 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: radial-gradient(circle at top left, #0f0c29, #302b63, #24243e);
+  color: #ffffff;
+}
+
+.scroll-progress {
+  height: 5px;
+  background: #00ffff;
+  width: 0%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #111;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  z-index: 1000;
+}
+
+.logo {
+  width: 80px;
+  height: 30px;
+  background: linear-gradient(90deg, blue, purple);
+  border-radius: 4px;
+}
+
+nav a {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #1abc9c;
+}
+
+main.presentacion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8rem 4rem 3rem;
+  flex-wrap: wrap;
+}
+
+.contenido-texto {
+  flex: 1;
+  max-width: 600px;
+}
+
+.bloque {
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(to right, #00c9ff, #92fe9d);
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: #ddd;
+}
+
+.botones {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.2s;
+}
+
+.btn.primario {
+  background-color: #4b00ff;
+  color: white;
+}
+
+.btn.secundario {
+  background-color: transparent;
+  border: 2px solid #00ffcc;
+  color: #00ffcc;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.imagen img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+}
+
+.galeria {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.galeria h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.galeria .imagenes {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 20px;
+  padding: 2rem;
+}
+
+.galeria .imagenes figure {
+  flex: 1;
+  margin: 0;
+  text-align: center;
+}
+
+.galeria .imagenes img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.galeria .imagenes img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+.video {
+  text-align: center;
+  margin: 4rem auto;
+}
+
+.video h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.contenedor-video iframe {
+  width: 90%;
+  max-width: 720px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #111;
+  color: #ccc;
+}
